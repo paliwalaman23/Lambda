@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Parallel Testing]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome testing(failed)">
+    <parameter name="OS" value="windows 10"/>
+    <parameter name="BrowserType" value="chrome"/>
+    <parameter name="Version" value="97.0"/>
+    <classes>
+      <class name="com.mindtree.Runner.Lambdatest">
+        <methods>
+          <include name="Test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.mindtree.Runner.Lambdatest -->
+    </classes>
+  </test> <!-- Chrome testing(failed) -->
+  <test thread-count="5" parallel="tests" name="MSedge testing(failed)">
+    <parameter name="OS" value="macOS Sierra"/>
+    <parameter name="BrowserType" value="MicrosoftEdge"/>
+    <parameter name="Version" value="87.0"/>
+    <classes>
+      <class name="com.mindtree.Runner.Lambdatest">
+        <methods>
+          <include name="Test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.mindtree.Runner.Lambdatest -->
+    </classes>
+  </test> <!-- MSedge testing(failed) -->
+  <test thread-count="5" parallel="tests" name="Internet Explorer testing(failed)">
+    <parameter name="OS" value="Windows 7"/>
+    <parameter name="BrowserType" value="Internet Explorer"/>
+    <parameter name="Version" value="11.0"/>
+    <classes>
+      <class name="com.mindtree.Runner.Lambdatest">
+        <methods>
+          <include name="Test1" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.mindtree.Runner.Lambdatest -->
+    </classes>
+  </test> <!-- Internet Explorer testing(failed) -->
+</suite> <!-- Failed suite [Parallel Testing] -->
